@@ -111,7 +111,7 @@ function generatePredictions() {
     
     // Get last period date
     const sortedData = [...data].sort((a, b) => new Date(b.periodDate) - new Date(a.periodDate));
-    const lastPeriodDate = new Date(sortedData,[object Object],periodDate);
+    const lastPeriodDate = new Date(sortedData[0].periodDate);
     
     // Generate 12 months of predictions
     const predictions = [];
